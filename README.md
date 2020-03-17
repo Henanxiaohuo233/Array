@@ -4,6 +4,8 @@ Array数组
 二位数组的创建及使用
 数组的基本操作
 数组排序算法
+public calss Arra{
+       public static void main(String[] args){
 
 /*
            int arr[];
@@ -38,3 +40,21 @@ Array数组
            for (int i=0;i<arr.length;i++){
                System.out.println((i+1)+"月有"+arr[i]+"天");
            }
+           
+           //二维数组创建
+           int mayrr[][];
+           int[][] mayrr2;
+           
+           //二维数组初始化
+           int tdarr1[][] = {{13,12},{45,2}};
+
+           int tdarr2[][] = new int[][]{{56,34,33},{12,33,54}};
+
+           int tdarr3[][] = new int[2][3];
+           tdarr3[0] = new int[]{6,54,71};  //给第一行赋值
+           tdarr3[1][0] = 63;
+           tdarr3[1][1] = 10;               //给第二行赋值
+           tdarr3[1][2] = 7;
+           
+       }
+}
