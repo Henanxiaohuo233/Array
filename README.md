@@ -56,5 +56,49 @@ public calss Arra{
            tdarr3[1][1] = 10;               //给第二行赋值
            tdarr3[1][2] = 7;
            
+           //   使用二维数组
+           /*
+           int a[][] = new int[3][4];           //定义二维数组
+           for (int i=0;i<a[1].length;i++){
+               for (int j=0;j<a[1].length;j++){ //循环遍历数组中的每个元素
+                   System.out.print(a[i][j]);   //将数组中的元素输出
+               }
+               System.out.println();            //输出空格
+           }
+            //输出结果：0000
+           //         0000
+           //         0000
+            */
+           //数组的基本操作
+           //   历遍数组
+           /*
+           int b[][] = new int[][]{{1},{12},{123}}; //定义二维数组
+           for (int k=0;k<b.length;k++){
+               for (int j=0;j<b[k].length;j++){     //循环遍历二维数组中的每一个元素
+                   System.out.print(b[k][j]);       //将数组中的元素输出
+               }
+               System.out.println();
+           }
+           //结果呈梯形输出
+           /*
+            1
+            12
+            123
+            */
+
+           char arr[][]=new char[4][];
+           arr[0]=new char[]{'春','眠','不','觉','晓'};
+           arr[1]=new char[]{'处','处','闻','啼','鸟'};
+           arr[2]=new char[]{'夜','来','风','雨','声'};
+           arr[3]=new char[]{'花','落','知','多','少'};
+           for (int a=0;a<arr.length;a++) {
+               for (int b = 0; b < arr[a].length; b++) {
+                   System.out.print(arr[a][b]);
+               }
+                if (a%2==0)
+                    System.out.println("，");
+                else
+                    System.out.print("。");
+           }
        }
 }
