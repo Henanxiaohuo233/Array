@@ -86,19 +86,48 @@ public calss Arra{
             123
             */
 
-           char arr[][]=new char[4][];
+          char arr[][]=new char[4][];
            arr[0]=new char[]{'春','眠','不','觉','晓'};
            arr[1]=new char[]{'处','处','闻','啼','鸟'};
-           arr[2]=new char[]{'夜','来','风','雨','声'};
+           arr[2]=new char[]{'夜','来','风','雨','声'};      //定义二维数组
            arr[3]=new char[]{'花','落','知','多','少'};
+
+           System.out.println("--横版--");
+
            for (int a=0;a<arr.length;a++) {
-               for (int b = 0; b < arr[a].length; b++) {
+               for (int b = 0; b < arr[a].length; b++) {    //循环遍历数组，横版遍历
                    System.out.print(arr[a][b]);
                }
                 if (a%2==0)
                     System.out.println("，");
-                else
-                    System.out.print("。");
+                else {                                      //奇数打印“,”偶数打印“。"
+                    System.out.println("。");
+                }
            }
+
+           System.out.println("--竖版--");
+
+           for (int j=0;j<arr[0].length;j++){
+               for (int i=3;i>=0;i--){
+                   System.out.print(arr[i][j]);             //循环遍历数组，竖版遍历
+               }
+               System.out.println();
+           }
+           System.out.println("。，。，");
+           //打印结果
+            /*
+            --横版--
+            春眠不觉晓，
+            处处闻啼鸟。
+            夜来风雨声，
+            花落知多少。
+            --竖版--
+            花夜处春
+            落来处眠
+            知风闻不
+            多雨啼觉
+            少声鸟晓
+            。，。，
+             */
        }
 }
