@@ -129,5 +129,23 @@ public calss Arra{
             少声鸟晓
             。，。，
              */
+             
+              //for循环 遍历数组
+             for (int i=0;i<arr.length;i++){
+                 for (int j=0;j<arr[i].length;j++){
+                     System.out.print(arr[i][j]);
+                 }
+                 System.out.println();
+             }
+
+             System.out.println("-----分割线-----");
+            //foreach循环
+             for (char a[]:arr){
+                 for (char b : a){
+                     System.out.print(b);
+                 }
+                 System.out.println();
+             }
+
        }
 }
