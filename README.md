@@ -161,6 +161,35 @@ public calss Arra{
                         System.out.print(e+"、");
                     }
                 }
+                
+                 //填充数组
+           /*
+            int arr[]=new int[5];   //定义一位数组 创建int型整数
+            arr[0]=5;               //后面使用Arrays方法，前面的初始化是没有效果的
+            arr[1]=6;               //输出结果没有改动
+            Arrays.fill(arr,8);     //使用同一个值对数组进行填充
+            for (int j=0;j<arr.length;j++){    //循环遍历每个数组
+                System.out.println("弟"+j+"个元素是："+arr[j]);
+                /*输出结果为
+                弟0个元素是：8
+                弟1个元素是：8
+                弟2个元素是：8
+                弟3个元素是：8
+                弟4个元素是：8
+
+            }
+            */
+            //替换数组元素
+           int arr[]={1,3,5,9,8,7,6,3,5,3,6};
+           Arrays.fill(arr,3,7,0);
+           for (int i=0;i<arr.length;i++){
+               if (arr[i]==0){
+                   System.out.print("*");
+               }else{
+                   System.out.print(arr[i]);
+               }
+
+           }
 
        }
 }
