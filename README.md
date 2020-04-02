@@ -190,6 +190,20 @@ public calss Arra{
                }
 
            }
+           //对数组进行排序
+           int arr[]=new int[]{13,63,33,93};    //声明数组
+           Arrays.sort(arr);                    //将数组进行排序
+           for (int amp:arr){                   //遍历循环排序后的数组
+               System.out.print(amp+" ");       //将排序后的数组中的个元素输出
+               //输出结果 13 33 63 93
+           }
+           
+           double arr2[]=new double[]{1.3,6.3,3.3,9.3};
+           Arrays.sort(arr2);
+           for (double map:arr2){
+               System.out.print(map+" ");
+               //输出结果 1.3 3.3 6.3 9.3 
+           }
 
        }
 }
