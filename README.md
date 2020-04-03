@@ -204,6 +204,11 @@ public calss Arra{
                System.out.print(map+" ");
                //输出结果 1.3 3.3 6.3 9.3 
            }
-
+           //复制数组
+           int arr[]=new int[]{12,13,14};
+           int newarr[]=Aarrays.copyOf(arr,5);
+           for(int j=0;j<newarr.lenght;j++){
+              System.out.ptint(newarr[j]);
+           }
        }
 }
