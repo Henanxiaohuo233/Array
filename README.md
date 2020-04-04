@@ -210,5 +210,12 @@ public calss Arra{
            for(int j=0;j<newarr.lenght;j++){
               System.out.ptint(newarr[j]);
            }
+           
+           int arr[]=new int[]{12,13,14,15,16,17};              //定义数组
+           int newarr[]=Arrays.copyOfRange(arr,2,5);   //复制数组
+           for (int i=0;i<newarr.length;i++){                   //遍历循环复制后的数组
+               System.out.print(newarr[i]+" ");                 //将新数组中的元素输出
+               //输出结果： 12 13 14
+           }
        }
 }
