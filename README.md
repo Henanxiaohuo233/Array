@@ -217,5 +217,35 @@ public calss Arra{
                System.out.print(newarr[i]+" ");                 //将新数组中的元素输出
                //输出结果： 12 13 14
            }
+
+           ///数组查询
+              /*
+              int arr[]=new int[]{2,9,4,25,4,10};        //定义数值
+              Arrays.sort(arr);                          //对数组进行排序
+              int index= Arrays.binarySearch(arr,4);//查找数组arr中元素4的索引位置
+              System.out.println("4的索引位置是："+index); //将索引输出
+
+               */
+              /*
+              int arr[]=new int[]{4,25,10};
+              Arrays.sort(arr);                  //对数组进行排列
+              int index=Arrays.binarySearch(arr,0,1,8);
+              System.out.print(index);           //输出结果：-2
+               */
+              /*
+              int ia[]=new int[]{1,8,9,4,5};            //定义数组
+              Arrays.sort(ia);                          //对数组进行排序
+              int index = Arrays.binarySearch(ia,4);//查找数值中ia中元素4的索引位置
+              System.out.print("4的索引位置是："+index);   //输出结果： 4的索引位置是：1
+
+               */
+              //binanrySearch(Object[],int fromIndex,int toIndex,Object key)
+              //定义Stering型数组arr
+              String srr[]=new String[]{"ab","cd","ef","yz"};
+              Arrays.sort(srr);    //讲数组进行排序
+              //指定索引范围搜索元素“cd”的索引位置
+              System.out.println(srr.length);
+              int index = Arrays.binarySearch(srr,0,2,"cd");
+              System.out.println("赵某的索引位置是："+index);//结果输出：赵某的索引位置是：1
        }
 }
