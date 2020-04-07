@@ -247,5 +247,22 @@ public calss Arra{
               System.out.println(srr.length);
               int index = Arrays.binarySearch(srr,0,2,"cd");
               System.out.println("赵某的索引位置是："+index);//结果输出：赵某的索引位置是：1
+              
+              //冒泡排序
+              int a[]=new int[]{63,4,24,1,3,15};      //创建数组
+              //比较相邻两个元素，较大的数往后冒泡
+              for (int i=1;i<a.length;i++){
+                     for (int j=0;j<a.length -i;j++){
+                            if (a[j]>a[j+1]){
+                                   int tmp = a[j];   //把第一个元素值保存到临时变量中
+                                   a[j] = a[j+1];    //把第二个元素值保存到第一个元素单元中
+                                   a[j+1] = tmp;     //把临时变量（也就是第一个元素原值）保存到第二个元素中
+                            }
+                     }
+              }
+
+              for (int i:a){                         //遍历数组
+                     System.out.print(i+">");        //输出结果：1>3>4>15>24>63>
+              }
        }
 }
