@@ -284,5 +284,40 @@ public calss Arra{
               for (int tmp:a){                         //1 7 46 64 75
                      System.out.print(tmp+" ");
               }
+              
+              //反转排序需要新建一个ReversSotr类这个类的代码将数组进行反转排序
+              /*
+public class ReverseSort {
+    public static void main(String[] args) {
+        //创建一个数组
+        int[] array={10,20,30,40,50,60};
+        //创建反转排序类对象
+        ReverseSort sorter=new ReverseSort();
+        //调用排序对象的方法将数组反转
+        sorter.sort(array);
+    }
+
+    private void sort(int[] array) {
+        System.out.println("数组原有内容：");
+        showArray(array);                       //原有内容输出
+        int temp;
+        int len = array.length;
+        for (int i=0;i<len/2;i++){
+            temp = array[i];
+            array[i] = array[len -1 -i];
+            array[len -1 -i] =temp;
+        }
+        System.out.println("数组反转后的内容：");
+        showArray(array);                       //反转后内容输出
+    }
+    private void showArray(int[] array){
+        for (int i:array){                      //遍历数组
+            System.out.print("\t"+i);           //输出每个数组元素
+        }
+        System.out.println();
+    }
+}
+
+ */
        }
 }
