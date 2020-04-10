@@ -264,5 +264,25 @@ public calss Arra{
               for (int i:a){                         //遍历数组
                      System.out.print(i+">");        //输出结果：1>3>4>15>24>63>
               }
+              
+              //选择排序
+              int a[] = {64,1,75,46,7};
+              int index;                         //指针指向数组中最大的数
+              for (int i=1;i<a.length;i++){      //排序过程 排序四趟
+                     index=0;                    //每次循环把指针变成0
+                     for (int j=1;j<=a.length-i;j++){
+                            if (a[index]<a[j]){  //数组中第一个元素比当前遍历元素小的话 降序排序和冒泡一样
+                                   index=j;      //将index 变成 j
+                            }
+                     }
+                     //交换在位置 array.lenght-i 和 index（最大值）上的两个数
+                     int tmp=a[a.length-i];      //把第一个元素值保存到临时变量中
+                     a[a.length-i]=a[index];     //把第二个元素值保存到第一个元素单元中
+                     a[index]=tmp;               //把临时变量也就是第一个元素原值保存到第二个元素中
+              }                                        //输出结果
+              System.out.println("选择排序的结果为：");   //选择排序的结果为：
+              for (int tmp:a){                         //1 7 46 64 75
+                     System.out.print(tmp+" ");
+              }
        }
 }
