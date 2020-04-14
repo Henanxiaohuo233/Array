@@ -319,5 +319,49 @@ public class ReverseSort {
 }
 
  */
+ 
+        //arr1赋值给arr2
+              int arr1[]={12,34,56,78};
+              int arr2[]=Arrays.copyOfRange(arr1,0,3);
+              for (int i:arr2){
+                     System.out.print(i);
+              }
+               */
+
+              /*
+              //将数组中的最小数输出
+              int arr[]={13,33,67,9,10};
+              for (int i=0;i<arr.length -1;i++){
+                     for (int j=0;j<arr.length - 1 - i;j++){
+                            if (arr[j]>arr[j+1]) {
+                                   int sum = arr[j];
+                                   sum = arr[j];
+                                   arr[j] = arr[j + 1];
+                                   arr[j + 1] = sum;
+                            }
+                     }
+              }
+              System.out.println("arr中最小的值："+arr[0]);
+
+              int arr1[]={8,6,2,5};
+              Arrays.sort(arr1);
+              System.out.println("arr1中最小的值："+arr1[0]);
+               */
+
+
+              /*     //将索引位置3的元素替换为dd
+              String arr[] = {"aa", "bb", "cc", "ee"};
+              System.out.println("输出替换前的数组：");
+              for (String i : arr) {      //遍历循环数组
+                     System.out.print(i+" ");
+
+              }
+              arr[3]="dd";                //索引位置3替换为dd
+              System.out.println("\n输出替换后的数组：");
+              for (String j:arr){         //遍历循环数组
+                     System.out.print(j+" ");
+              }
+
+               */
        }
 }
