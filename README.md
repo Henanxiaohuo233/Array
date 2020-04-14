@@ -320,13 +320,22 @@ public class ReverseSort {
 
  */
  
-        //arr1赋值给arr2
-              int arr1[]={12,34,56,78};
-              int arr2[]=Arrays.copyOfRange(arr1,0,3);
-              for (int i:arr2){
-                     System.out.print(i);
+        //a赋值给b
+              /*
+              int a[]={12,3,23,34};
+              int b[]=new int[a.length];
+              for (int j=0;j<a.length;j++){
+                     b[j]=a[j];
               }
-               */
+              System.out.println("数组a:");
+              for (int j=0;j<a.length;j++){
+                     System.out.print(a[j]+" ");
+              }
+              System.out.println("\n数组b:");
+              for (int j=0;j<a.length;j++){
+                     System.out.print(b[j]+" ");
+              }
+              */
 
               /*
               //将数组中的最小数输出
@@ -363,5 +372,23 @@ public class ReverseSort {
               }
 
                */
+              /*
+              int arr[][]=new int[][]{{1,2,3},{4,5,6},{7,8,9}};
+              System.out.println("原二维数组：");
+              for (int i=0;i<arr.length;i++){
+                     for (int j=0;j<arr[i].length;j++){
+                            System.out.print("\t"+arr[i][j]);
+                     }
+                     System.out.println();
+              }
+              System.out.println("互调用的二维数组：");
+              for (int i=0;i<arr.length;i++){
+                     for (int j=0;j<arr[i].length;j++){
+                            System.out.print("\t"+arr[j][i]);
+                     }
+                     System.out.println();
+              }
+               */
+
        }
 }
